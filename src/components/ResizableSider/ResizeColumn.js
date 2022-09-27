@@ -1,57 +1,6 @@
-## Description
+import React, {useEffect, useRef, useState} from 'react';
+import './styles.css';
 
-Example implementation of free column division.
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn`
-
-install dependecies
-
-### `yarn start`
-
- start example project
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-
-
-## How to Use
-
-```react
-const View = () => {
-    return (
-        <ResizeColumn
-            columnMinWidth={150}
-            leftColumn={<Outline dataSource={articleDataSource}/>}
-            rightColumn={<Article dataSource={articleDataSource}/>}
-        />
-    );
-};
-```
-
-
-
-## Config
-
-```react
-divideLineWidth: 分割器的宽度，默认 '20px;
-columnMinWidth: 每一块区域最小宽度，默认 '50px'
-leftColumn: 组件，左边栏目
-rightColumn: 组件，右边栏目
-```
-
-
-
-## Core Logic
-
-```react
 function ResizeColumn(props) {
     const layoutRef = useRef(null);
     const {
@@ -135,7 +84,5 @@ function ResizeColumn(props) {
         </div>
     );
 }
-```
 
-
-
+export { ResizeColumn };

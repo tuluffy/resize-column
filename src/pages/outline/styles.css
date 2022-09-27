@@ -1,0 +1,11 @@
+.outline {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.list-item {
+	display: block;
+	line-height: 32px;
+}
